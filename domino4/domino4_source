@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+pins=(17 27 22 10)
+
+for pin in "${pins[@]}"; do
+    pinctrl set "$pin" op
+done
+
+light_one() {
+    local on_idx=$1
+    for idx in "${!pins[@]}"; do
+        if [[ "$idx" -eq "$on_idx" ]]; then
+            pinctrl set "${pins[$idx]}" dh
+        else
+            pinctrl set "${pins[$idx]}" dl
+        fi
+    done
+}
+
+while :; do
+    for ((i = 0; i < ${#pins[@]}; i++)); do
+        light_one "$i"
+        sleep 1
+    done
+done
