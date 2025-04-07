@@ -15,19 +15,6 @@
   - `dh`: digital high (1)
   - `dl`: digital low (0)
 
-## 📁 프로젝트 구조
-
-```
-week5/
-├── counter8/
-│ ├── counter8_source
-│ └── README.md
-├── domino4/
-│ ├── domino4_source
-│ └── README.md
-└── README.md
-```
-
 ## 📌 예제 설명
 
 ### ✅ counter8
@@ -41,3 +28,19 @@ week5/
 - **기능**: 여러 개의 핀 중 하나씩 순차적으로 점등
 - **활용**: 도미노 효과, 시퀀스 표시, LED 런닝 라이트
 - **사용 핀**: GPIO 17, 27, 22, 10
+
+## 📁 프로젝트 구조
+
+```
+week5/
+├── counter8/
+│ ├── counter8_source
+│ └── README.md
+├── domino4/
+│ ├── domino4_source
+│ └── README.md
+└── README.md
+```
+
+ssh 연결이 불안정한지 촬영중에 계속 끊어져서 일단 connect.raspberry.com에서 화면공유하여 프로젝트 진행하였습니다.
+소스코드와 readme 파일은 별도의 파일을 만들어서 github 업로드 용으로 사용하였습니다.
